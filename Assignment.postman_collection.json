@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "3f68af26-c2e2-4b87-b409-ff6db0656399",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29629887"
+	},
+	"item": [
+		{
+			"name": "Create New Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\":\"mayank]\",\r\n    \"email\":\"t4e7m8899p9@gmail.com\",\r\n    \"mobileNumber\":\"9713025501\",\r\n    \"city\":\"Indore\"\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/customer/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"customer",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"email\":\"t4e7m88w899p9@gmail.com\",\r\n    \"productName\":\"trimmer\",\r\n    \"quantity\":3,\r\n    \"price\":440,\r\n    \"customerId\":\"6557091738364f2070f25f8d\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/purchase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\":\"khajrana\",\r\n    \"city\":\"Indore\",\r\n    \"pinCode\":452016,\r\n    \"purchaseId\":\"65570e963d946923585272ea\",\r\n    \"customerId\":\"6557091738364f2070f25f8d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/shipping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"shipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/customers/Indore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"customers",
+						"Indore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
